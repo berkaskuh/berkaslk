@@ -13,11 +13,11 @@ const getList = async (kw) => {
 const getLink = async (slug) => {
     try {
         let r = await axios({
-            url: `https://asdahsdkjajslkfbkaujsgfbjaeghfyjj76e8637e68723rhbfajkl.akurat.co/verifying.php?slug=${slug}`, 
+            url: `http://dl.sharemydrive.xyz/verifying.php?slug=${slug}`, 
             data : {slug: slug}, 
             headers: {
-                'origin': 'https://asdahsdkjajslkfbkaujsgfbjaeghfyjj76e8637e68723rhbfajkl.akurat.co',
-                'referer': `https://asdahsdkjajslkfbkaujsgfbjaeghfyjj76e8637e68723rhbfajkl.akurat.co/get/${slug}/`,
+                'origin': 'http://dl.sharemydrive.xyz/',
+                'referer': `http://dl.sharemydrive.xyz//get/${slug}/`,
                 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
                 'x-requested-with': 'XMLHttpRequest'
             }
